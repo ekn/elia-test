@@ -1,0 +1,266 @@
+/* Reset some basic elements */
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+/* Basic styling */
+
+body {
+  font: 200 16px/1.5 "IBM Plex Serif", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #fff;
+  background-color: #c2c2c2;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal; }
+
+/* Set `margin-bottom` to maintain vertical rhythm */
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+.highlight {
+  margin-bottom: 15px; }
+
+/* `main` element */
+
+main {
+  display: block;
+  /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
+
+/* Images */
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+/* Figures */
+
+figure > img {
+  display: block; }
+
+figcaption {
+  font-size: 14px; }
+
+/* Lists */
+
+ul, ol {margin: 0; list-style-type:none;}
+
+li > ul, li > ol {margin-bottom: 0;}
+
+/* HEADINGS */
+
+h1, h2, h3, h4, h5, h6 {font-weight: 200;}
+
+/* Links */
+
+a:link, a:visited {color:#fff; font-weight: 400; text-decoration: none; border-bottom: 1px solid #fff;}     
+a:hover, a:active {color:#00ffbb; font-weight: 400; text-decoration: none; border-bottom: 3px solid #00ffbb;}  
+
+/* Blockquotes */
+
+blockquote {
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+/* Wrapper */
+
+.wrapper {
+  max-width: -webkit-calc(1200px - (30px * 2));
+  max-width: calc(1200px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px; }
+  @media screen and (max-width: 800px) {
+    .wrapper {
+      max-width: -webkit-calc(800px - (30px));
+      max-width: calc(800px - (30px));
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+/* Clearfix */
+
+.wrapper:after, .footer-col-wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* SITE HEADER AND NAV ------------------------------------------ */
+
+.site-header {
+    display: block;
+    position: fixed;
+    width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+    .site-header {
+      position: relative; } }
+
+nav {
+	display: block;
+	margin: 10px 0 0 0;
+	padding: 0;
+	font-family:'IBM Plex Serif', serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+nav a:link, nav a:visited {color:#fff; font-weight: 200; border-bottom: none;}     
+nav a:hover {color:#00ffbb; font-weight: 200; border-bottom: 5px solid #00ffbb;}  
+nav a:active {color:#00ffbb; font-weight: 200; border-bottom: none;}
+
+.nav-left {float: left;}
+.nav-center {float: right; margin-right: 5%;}
+.nav-right {float: right; width: 70px;}
+.arrowleft {float: left;}
+.arrowright {float: right;}
+
+.hide {
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+.parent {
+  width: 100%;
+  height: 100vh;
+}
+.show {
+ opacity: 1; 
+ pointer-events: all;
+}
+
+/* Site footer */
+
+footer {
+    font-family: 'IBM Plex Mono';
+    font-weight: 100;
+    margin-bottom: 15px;
+    padding-bottom: 30px; }
+
+.footer-list {
+    float: left;
+    margin-right: 20px; }
+    @media screen and (max-width: 800px) {
+    .footer-list {
+      float: none; } }
+  
+/* Page content */
+
+.page-content {
+  padding: 1px 0; }
+
+.page-heading {
+  font-size: 32px; }
+
+.post-list-heading {
+  font-size: 28px; }
+
+.post-list {
+  margin-left: 0;
+  list-style: none; }
+  .post-list > li {
+    margin-bottom: 30px; }
+
+/* Posts */
+
+.post-title {
+  font-size: 2.5em;
+  line-height: 2.5em;
+  margin-top: 20px; }
+  @media screen and (max-width: 800px) {
+    .post-title {
+      font-size: 2em;
+      line-height: 2em; } }
+
+  .post-content h2 {
+    font-size: 32px; }
+    @media screen and (max-width: 800px) {
+      .post-content h2 {
+        font-size: 28px; } }
+  .post-content h3 {
+    font-size: 26px; }
+    @media screen and (max-width: 800px) {
+      .post-content h3 {
+        font-size: 22px; } }
+  .post-content h4 {
+    font-size: 20px; }
+    @media screen and (max-width: 800px) {
+      .post-content h4 {
+        font-size: 18px; } }
+
+/* CONTENT & IMAGE POSITIONING FOR LAYOUTS (CATEGORY INCLUDES) / ADD NEW LAYOUTS TO MAIN.HTML INCLUDE !! -------------------- */
+
+.center-wrapper {
+    display: block;
+    margin: 0 auto;
+    }
+
+/* CONTENT & IMAGE POSITIONING FOR POSTS ------------------------------------------ */
+
+.center {
+    display: block;
+    float: none;
+    margin: 32% auto 5%;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+        .center {margin: 10% auto 2%;}} 
+        
+
+/* ADDITIONAL TEXT STYLES ------------------------------------------ */   
+        
+/* for large text thingies */
+
+.huge {
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 10em;
+    font-style: italic;
+    line-height: 1em;
+    color: #1c1c8c;
+    animation-name: huges;
+    animation-duration: 9s;
+}
+
+@media screen and (max-width: 800px) {
+        .huge {font-size: 7em;} 
+        }
+
+.huge::-moz-selection {
+  color: #fff;
+  background: none;
+}
+
+.huge::selection {
+  color: #fff;
+  background: none;
+}
+
+@keyframes huges {
+  from {color: #f281ce;}
+  to {color: #1c1c8c;}
+}
+
+     
+/* ABOUT PAGE ------------------------------------------  */
+
+
+/* HELPER CLASSES ------------------------------------------  */
+
+/* hide visually and from screen readers: */
+
+.hidden {
+    display: none !important;
+}

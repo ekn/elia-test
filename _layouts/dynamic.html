@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include meta.html %}
+    <title>{{ page.title }} {% if page.subtitle %} ({{ page.subtitle }}){% endif %} / {{ site.title }}</title>
+</head>
+<body class="parent" style="{% if page.bgcolor %}background-color: {{ page.bgcolor }};{% endif %} {% if page.bggradient %}background: {{ page.bggradient }};{% endif %} {% if page.bgimage %}background: url('{{ page.bgimage }}') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;{% endif %} {% if page.bgtile %}background: url('{{ page.bgtile }}') repeat;{% endif %}">
+
+{% include header.html %}
+
+{% include main.html %}
+
+{% include scripts.html %}
+
+</body>
+</html>
