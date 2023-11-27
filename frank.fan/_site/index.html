@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117497112-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117497112-1');
+</script>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">  
+<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">  
+<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Have You Seen This Bird" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Frank is a California scrub jay." />
+<meta property="og:description" content="Frank is a California scrub jay." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Have You Seen This Bird" />
+<script type="application/ld+json">
+{"name":"Have You Seen This Bird","description":"Frank is a California scrub jay.","@type":"WebSite","url":"http://localhost:4000/","headline":"Have You Seen This Bird","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="stylesheet" href="/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Have You Seen This Bird" />
+<link href='//fonts.googleapis.com/css?family=Rubik:700,500' rel='stylesheet' type='text/css'>
+
+
+    <title>Have You Seen This Bird</title>
+</head>
+
+
+
+<body class="parent" style="  background: url('images/1_bg.png') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; ">
+
+<header class="site-header" role="banner">
+    <div class="wrapper">
+        <h1 class="hidden">Have You Seen This Bird</h1>
+        <nav></nav>
+    </div>
+</header>
+
+
+
+<main class="page-content" aria-label="Content">
+    <div>
+        
+            <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h2 class="post-title p-name hidden" itemprop="name headline">hi frank</h2>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+        <div class="center-wrapper">
+            <p class="center huge">Have you seen this bird?</p>
+        </div>
+    </div>
+</article>
+      
+        
+    </div>
+</main>
+
+<script>
+var nexttick;
+var numticks = 0;
+
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('mousemove', showAllEvent);
+  window.addEventListener('touchmove', showAllEvent);
+  window.addEventListener('touchstart', showAllEvent);
+  tick();
+}, false);
+
+var tick = function() {
+  if (numticks >= 5) {
+    $('.hide').removeClass('show');
+    numticks = 0;
+  } else {
+    numticks = numticks + 1;
+  }
+
+  nexttick = setTimeout(tick, 500);
+}
+
+var showAllEvent = function() {
+  $('.hide').addClass('show');
+
+  clearTimeout(nexttick);
+  numticks = 0;
+  nexttick = setTimeout(tick, 500);
+}
+</script>
+    
+</body>
+</html>
+
